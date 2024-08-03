@@ -1,0 +1,30 @@
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    span {
+      font-weight: bold;
+    }
+
+    .socials {
+      display: flex;
+      gap: 20px;
+
+      a {
+        svg {
+          width: 30px;
+          height: 30px;
+          aspect-ratio: 1;
+        }
+      }
+    }
+
+  }
+}
