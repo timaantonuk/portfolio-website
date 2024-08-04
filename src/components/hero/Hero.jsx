@@ -1,7 +1,7 @@
 import React from 'react';
 import './hero.scss'
 
-import {motion} from "framer-motion";
+import {color, motion} from "framer-motion";
 
 const textVariants = {
   initial: {
@@ -52,7 +52,12 @@ const Hero = () => {
               animate='animate'
           >
             <motion.h2 variants={textVariants}>TYMOFII ANTONIUK</motion.h2>
-            <motion.h1 variants={textVariants}>Front-End <br/> &nbsp; &nbsp; &nbsp; &nbsp;Developer</motion.h1>
+            <motion.h1 initial={{skewX: -2}} animate={{skewX: 2}}
+                       transition={{duration: 2, repeat: Infinity, repeatType: "mirror"}}
+                       variants={textVariants}>Front-End <br/> &nbsp; &nbsp; &nbsp; &nbsp;
+              <motion.span className="rainbow-text"
+                           initial={{ color: '#000000' }}>Developer</motion.span>
+            </motion.h1>
             <motion.div variants={textVariants} className="buttons">
               <motion.button variants={textVariants}>See my Latest Works</motion.button>
               <motion.button variants={textVariants}>Contact Me</motion.button>

@@ -31,10 +31,14 @@ const Navbar = () => {
               animate={{x: 0, opacity: 1}}
               transition={{duration: 1}}
           >
-            <a target='_blank' href="https://www.linkedin.com/in/tifomeypng/" rel="noreferrer"><FaLinkedin/></a>
-            <a target='_blank' href="mailto:tima.antonuk2@gmail.com" rel="noreferrer"><IoMail/></a>
-            <a target='_blank' href="https://github.com/timaantonuk" rel="noreferrer"><FaSquareGithub/></a>
-            <a target='_blank' href="https://t.me/skrillex_vernis" rel="noreferrer"><FaTelegram/></a>
+            <motion.a whileHover={{scale: 1.2}} transition={{duration: 0.4}} target='_blank'
+                      href="https://www.linkedin.com/in/tifomeypng/" rel="noreferrer"><FaLinkedin/></motion.a>
+            <motion.a whileHover={{scale: 1.2}} transition={{duration: 0.4}} target='_blank'
+                      href="mailto:tima.antonuk2@gmail.com" rel="noreferrer"><IoMail/></motion.a>
+            <motion.a whileHover={{scale: 1.2}} transition={{duration: 0.4}} target='_blank'
+                      href="https://github.com/timaantonuk" rel="noreferrer"><FaSquareGithub/></motion.a>
+            <motion.a whileHover={{scale: 1.2}} transition={{duration: 0.4}} target='_blank'
+                      href="https://t.me/skrillex_vernis" rel="noreferrer"><FaTelegram/></motion.a>
 
           </motion.div>
         </div>
