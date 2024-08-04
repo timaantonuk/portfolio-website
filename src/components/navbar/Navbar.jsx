@@ -25,13 +25,18 @@ const Navbar = () => {
             Tymofii Antoniuk
           </motion.span>
 
-          <div className="socials">
+          <motion.div
+              className="socials"
+              initial={{x: 170, opacity: 0}}
+              animate={{x: 0, opacity: 1}}
+              transition={{duration: 1}}
+          >
             <a target='_blank' href="https://www.linkedin.com/in/tifomeypng/" rel="noreferrer"><FaLinkedin/></a>
             <a target='_blank' href="mailto:tima.antonuk2@gmail.com" rel="noreferrer"><IoMail/></a>
             <a target='_blank' href="https://github.com/timaantonuk" rel="noreferrer"><FaSquareGithub/></a>
             <a target='_blank' href="https://t.me/skrillex_vernis" rel="noreferrer"><FaTelegram/></a>
 
-          </div>
+          </motion.div>
         </div>
       </div>
   );
