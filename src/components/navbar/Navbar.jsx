@@ -1,18 +1,29 @@
 import React from 'react';
 import './navbar.scss'
 
-import { FaLinkedin } from "react-icons/fa6";
-import { FaSquareGithub } from "react-icons/fa6";
-import { FaTelegram } from "react-icons/fa6";
-import { IoMail } from "react-icons/io5";
+import {motion} from "framer-motion";
+
+import {FaLinkedin} from "react-icons/fa6";
+import {FaSquareGithub} from "react-icons/fa6";
+import {FaTelegram} from "react-icons/fa6";
+import {IoMail} from "react-icons/io5";
+import Sidebar from "../sidebar/Sidebar.jsx";
 
 
 const Navbar = () => {
   return (
       <div className='navbar'>
-        {/*Sidebar*/}
+
+        <Sidebar/>
+
         <div className="wrapper">
-          <span>Tymofii Antoniuk</span>
+          <motion.span
+              initial={{opacity: 0, scale: 0.5}}
+              animate={{opacity: 1, scale: 1}}
+              transition={{duration: 0.7}}
+          >
+            Tymofii Antoniuk
+          </motion.span>
 
           <div className="socials">
             <a target='_blank' href="https://www.linkedin.com/in/tifomeypng/" rel="noreferrer"><FaLinkedin/></a>

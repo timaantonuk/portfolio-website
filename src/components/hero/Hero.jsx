@@ -1,0 +1,77 @@
+import React from 'react';
+import './hero.scss'
+
+import {motion} from "framer-motion";
+
+const textVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity
+    }
+  }
+}
+
+const sliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: '-700%',
+    transition: {
+      repeat: Infinity,
+      repeatType: 'mirror',
+      duration: 40,
+    },
+  },
+}
+
+const Hero = () => {
+  return (
+      <div className='hero'>
+
+        <div className="wrapper">
+          <motion.div
+              className="textContainer"
+              variants={textVariants}
+              initial='initial'
+              animate='animate'
+          >
+            <motion.h2 variants={textVariants}>TYMOFII ANTONIUK</motion.h2>
+            <motion.h1 variants={textVariants}>Front-End <br/> &nbsp; &nbsp; &nbsp; &nbsp;Developer</motion.h1>
+            <motion.div variants={textVariants} className="buttons">
+              <motion.button variants={textVariants}>See my Latest Works</motion.button>
+              <motion.button variants={textVariants}>Contact Me</motion.button>
+            </motion.div>
+            <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="scroll image"/>
+          </motion.div>
+        </div>
+
+        <motion.div className="slidingTextContainer" variants={sliderVariants} initial='initial' animate='animate'>
+          Software Engineer Front-End Web Developer
+        </motion.div>
+
+        <div className="imageContainer">
+          <img src="/hero-tima-4.png" className='heroPerson' alt="Tymofii Antoniuk photo"/>
+          <img src="/hero-tima-overlay.png" className='heroOverlay' alt="Tymofii Antoniuk photo"/>
+        </div>
+
+      </div>
+  );
+};
+
+export default Hero;
