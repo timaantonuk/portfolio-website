@@ -18,6 +18,10 @@
     width: 400px;
     background-color: $background-secondary-color;
 
+    @include mobile {
+      width: 100%;
+    }
+
     .links {
       position: absolute;
       width: 100%;

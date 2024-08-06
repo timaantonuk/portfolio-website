@@ -8,19 +8,24 @@
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 50px;
+    padding-block: 50px;
     text-align: center;
     color: $accent-color2;
     font-size: 36px;
 
-    //@include mobile {
-    //  padding-top: calc(100vh - 100px);
-    //  font-size: 24px;
-    //}
+    @include mobile {
+      font-size: 24px;
+      position: static;
+    }
 
     .progressBar {
       height: 10px;
       background-color: $text-primary-color;
+
+      @include mobile {
+        width: 340px;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -32,6 +37,7 @@
     height: 100%;
     overflow: hidden;
 
+
     .wrapper {
       max-width: 1366px;
       height: 100%;
@@ -41,18 +47,19 @@
       justify-content: center;
       gap: 50px;
 
-      //@include mobile {
-      //  flex-direction: column;
-      //}
+      @include mobile {
+        flex-direction: column;
+        gap: 70px;
+      }
 
       .imageContainer {
         flex: 1;
         height: 50%;
 
-        //@include mobile {
-        //  width: 100%;
-        //  max-height: 300px;
-        //}
+        @include mobile {
+          width: 85%;
+          max-height: 300px;
+        }
 
         img {
           width: 100%;
@@ -60,9 +67,10 @@
           border-radius: 50px;
           object-fit: cover;
 
-          //@include mobile {
-          //  object-fit: contain;
-          //}
+          @include mobile {
+
+            border-radius: 50px;
+          }
         }
       }
 
@@ -70,30 +78,32 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
 
-        //@include mobile {
-        //  transform: none !important;
-        //  padding: 10px;
-        //  align-items: center;
-        //  text-align: center;
-        //}
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+          width: 90%;
+          gap: 60px;
+        }
 
         h2 {
           font-size: 72px;
 
-          //@include mobile {
-          //  font-size: 36px;
-          //}
+          @include mobile {
+            font-size: 36px;
+          }
         }
 
         p {
           color: gray;
           font-size: 20px;
 
-          //@include mobile {
-          //  font-size: 16px;
-          //}
+          @include mobile {
+            font-size: 16px;
+          }
         }
 
         a {
@@ -107,6 +117,12 @@
           align-items: center;
           justify-content: center;
           gap: 10px;
+
+          @include mobile {
+            width: 350px;
+            height: 90px;
+            border-radius: 30px;
+          }
 
           p {
             color: $background-color;

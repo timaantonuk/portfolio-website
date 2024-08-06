@@ -1,5 +1,12 @@
 import React, {useRef} from 'react';
+
 import './services.scss'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 import {motion, useInView} from "framer-motion";
 
@@ -19,8 +26,9 @@ const Services = () => {
           className='services'
           variants={variants}
           initial='initial'
-          ref={ref}
-          animate={isInView && 'animate'}
+          // ref={ref}
+          // animate={isInView && 'animate'}
+          animate='animate'
       >
         <motion.div className="textContainer" variants={variants}>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -104,6 +112,25 @@ const Services = () => {
           </div>
 
         </motion.div>
+
+        <div className="listContainerSm">
+          <Swiper
+              effect={'cards'}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper"
+          >
+            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>Slide 2</SwiperSlide>
+            <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>Slide 5</SwiperSlide>
+            <SwiperSlide>Slide 6</SwiperSlide>
+            <SwiperSlide>Slide 7</SwiperSlide>
+            <SwiperSlide>Slide 8</SwiperSlide>
+            <SwiperSlide>Slide 9</SwiperSlide>
+          </Swiper>
+        </div>
 
       </motion.div>
   );

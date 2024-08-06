@@ -3,6 +3,10 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
+  @media (max-width: 738px) {
+    scroll-snap-type: none;
+  }
 }
 
 * {
@@ -25,5 +29,24 @@ a {
 section {
   height: 100vh;
   scroll-snap-align: center;
+}
+
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content
+  }
 }
 

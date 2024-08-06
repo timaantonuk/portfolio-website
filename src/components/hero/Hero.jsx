@@ -59,8 +59,8 @@ const Hero = () => {
                            initial={{ color: '#000000' }}>Developer</motion.span>
             </motion.h1>
             <motion.div variants={textVariants} className="buttons">
-              <motion.button variants={textVariants}>See my Latest Works</motion.button>
-              <motion.button variants={textVariants}>Contact Me</motion.button>
+              <motion.a href='#Portfolio' variants={textVariants}>See my Latest Works</motion.a>
+              <motion.a href='#Contact' variants={textVariants}>Contact Me</motion.a>
             </motion.div>
             <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="scroll image"/>
           </motion.div>

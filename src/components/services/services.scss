@@ -1,11 +1,18 @@
 @import '/src/variables/_colors.scss';
+@import '../../app.scss';
 
 .services {
   background: $background-gradient;
   height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include mobile {
+    gap: 30px;
+    padding-block: 50px;
+  }
 
   .textContainer {
     flex: 1;
@@ -14,17 +21,31 @@
     align-items: center;
     gap: 20px;
 
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
     p {
       font-weight: 200;
       font-size: 20px;
       color: $text-primary-color;
       text-align: right;
+
+      @include mobile {
+        font-size: 10px;
+      }
     }
 
     hr {
       width: 500px;
       border: none;
       border-top: 0.5px solid $text-primary-color;
+
+      @include mobile {
+        width: 300px;
+      }
     }
   }
 
@@ -34,11 +55,21 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile {
+      width: 100%;
+    }
+
 
     .title {
       display: flex;
       gap: 50px;
       align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px
+      }
 
 
       img {
@@ -46,11 +77,21 @@
         height: 100px;
         border-radius: 50px;
         object-fit: cover;
+
+        @include mobile {
+          width: 230px;
+          height: 50px;
+        }
+
       }
 
       h1 {
         font-size: 96px;
         font-weight: 100;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
 
       a {
@@ -64,6 +105,14 @@
         color: #0c0c1d;
         text-transform: uppercase;
         font-weight: bold;
+
+        @include mobile {
+          width: 230px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 16px;
+        }
+
       }
     }
   }
@@ -73,6 +122,10 @@
     display: flex;
     max-width: 1366px;
     margin: auto;
+
+    @include mobile {
+      display: none;
+    }
 
     .box {
       padding-block: 50px;
@@ -99,5 +152,70 @@
         }
       }
     }
+  }
+
+  .listContainerSm {
+
+    display: block;
+
+    @include desktop {
+      display: none;
+    }
+
+    .swiper {
+      width: 220px;
+      height: 380px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+
   }
 }
