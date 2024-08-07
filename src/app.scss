@@ -31,6 +31,27 @@ section {
   scroll-snap-align: center;
 }
 
+.technologies {
+  position: relative;
+  background: radial-gradient(circle, rgba(14,0,68,1) 0%, rgba(12,12,29,1) 100%);
+}
+
+.titleOverlay {
+  font-size: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: 1520px) {
+    font-size: 110px;
+  }
+
+  @media (max-width: 738px) {
+    font-size: 20px;
+  }
+}
+
 
 @mixin mobile {
   @media (max-width: 738px) {
@@ -46,6 +67,12 @@ section {
 
 @mixin desktop {
   @media (min-width: 1025px) {
+    @content
+  }
+}
+
+@mixin mdscreen {
+  @media (max-width: 1520px) {
     @content
   }
 }

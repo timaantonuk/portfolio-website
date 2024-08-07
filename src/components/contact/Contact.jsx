@@ -132,6 +132,13 @@ import "./contact.scss";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
+import { IoMdMailUnread } from "react-icons/io";
+import { FaHouseLaptop } from "react-icons/fa6";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+
+
+
+
 const variants = {
   initial: {
     y: 500,
@@ -168,7 +175,7 @@ const Contact = () => {
         .then(
             (result) => {
               setSuccess(true);
-              formRef.current.reset(); // Очищаем форму после успешной отправки
+              formRef.current.reset();
             },
             (error) => {
               setError(true);
@@ -186,25 +193,36 @@ const Contact = () => {
       >
         <motion.div className="textContainer" variants={variants}>
           <motion.h1 variants={variants}>Let’s work together</motion.h1>
-          <motion.div className="item" variants={variants}>
-            <h2>Mail</h2>
-            <span>tima.antonuk2@gmail.com</span>
-          </motion.div>
-          <motion.div className="item" variants={variants}>
-            <h2>Address</h2>
-            <span>Hello street New York</span>
-          </motion.div>
-          <motion.div className="item" variants={variants}>
-            <h2>Phone</h2>
-            <span>+1 234 5678 90</span>
-          </motion.div>
+          <div className='items'>
+            <motion.div className="item" variants={variants}>
+              <IoMdMailUnread style={{height: '50px', width: '50px'}}/>
+              <div>
+                <h2>Mail</h2>
+                <span>tima.antonuk2@gmail.com</span>
+              </div>
+            </motion.div>
+            <motion.div className="item" variants={variants}>
+              <FaHouseLaptop style={{height: '50px', width: '50px'}}/>
+              <div>
+                <h2>Address</h2>
+                <span>123 Avenue, New York, USA</span>
+              </div>
+            </motion.div>
+            <motion.div className="item" variants={variants}>
+              <FaPhoneSquareAlt style={{height: '50px', width: '50px'}}/>
+              <div>
+                <h2>Phone</h2>
+                <span>+1 234 567 890</span>
+              </div>
+            </motion.div>
+          </div>
         </motion.div>
         <div className="formContainer">
           <motion.div
               className="phoneSvg"
               initial={{ opacity: 1 }}
               whileInView={{ opacity: 0 }}
-              transition={{ delay: 3, duration: 1 }}
+              transition={{ delay: 1, duration: 1 }}
           >
             <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
               <motion.path
@@ -234,7 +252,7 @@ const Contact = () => {
               onSubmit={sendEmail}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 4, duration: 1 }}
+              transition={{ delay: 2, duration: 1 }}
           >
             <input type="text" required placeholder="Name" name="name" />
             <input type="email" required placeholder="Email" name="email" />

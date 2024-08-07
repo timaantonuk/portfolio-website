@@ -198,7 +198,7 @@ const Single = ({ item }) => {
   }, []);
 
   return (
-      <section>
+      <section style={{marginBottom: '40px'}}>
         <div className="container">
           <div className="wrapper">
             <div className="imageContainer" ref={ref}>

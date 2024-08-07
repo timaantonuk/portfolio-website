@@ -5,12 +5,17 @@ import Parallax from "./components/parallax/Parallax.jsx";
 import Services from "./components/services/Services.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import Technologies from "./components/technologies/Technologies.jsx";
 
 const App = () => {
   return <div>
     <section id='Homepage'>
       <Navbar/>
       <Hero/>
+    </section>
+    <section className='technologies'>
+      <h1 className='titleOverlay'>My tech stack</h1>
+      <Technologies/>
     </section>
     <section id='Services'>
       <Parallax type='services'/>

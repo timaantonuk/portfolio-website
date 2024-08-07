@@ -2,8 +2,9 @@ import React, {useRef} from 'react';
 
 import './services.scss'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Autoplay, EffectCards} from 'swiper/modules';
+import {Navigation, Pagination, Mousewheel, Keyboard} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -57,78 +58,120 @@ const Services = () => {
 
         </motion.div>
 
-        <motion.div className="listContainer" variants={variants}>
+        {/*<motion.div className="listContainer" variants={variants}>*/}
 
-          <div className="box">
-            <div className='heading'>
-              <h2>Company Name</h2>
-              <h3>Sep 2019 - Aug 2020</h3>
-              <h4>Front-End Developer</h4>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam
-              minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem
-              expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?
-              Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium
-              blanditiis exercitationem <span>nobis numquam</span> quasi.</p>
-          </div>
+        {/*  <div className="box">*/}
+        {/*    <div className='heading'>*/}
+        {/*      <h2>Company Name</h2>*/}
+        {/*      <h3>Sep 2019 - Aug 2020</h3>*/}
+        {/*      <h4>Front-End Developer</h4>*/}
+        {/*    </div>*/}
+        {/*    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam*/}
+        {/*      minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem*/}
+        {/*      expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?*/}
+        {/*      Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium*/}
+        {/*      blanditiis exercitationem <span>nobis numquam</span> quasi.</p>*/}
+        {/*  </div>*/}
 
-          <div className="box">
-            <div className='heading'>
-              <h2>Company Name</h2>
-              <h3>Sep 2019 - Aug 2020</h3>
-              <h4>Front-End Developer</h4>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam
-              minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem
-              expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?
-              Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium
-              blanditiis exercitationem <span>nobis numquam</span> quasi.</p>
-          </div>
+        {/*  <div className="box">*/}
+        {/*    <div className='heading'>*/}
+        {/*      <h2>Company Name</h2>*/}
+        {/*      <h3>Sep 2019 - Aug 2020</h3>*/}
+        {/*      <h4>Front-End Developer</h4>*/}
+        {/*    </div>*/}
+        {/*    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam*/}
+        {/*      minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem*/}
+        {/*      expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?*/}
+        {/*      Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium*/}
+        {/*      blanditiis exercitationem <span>nobis numquam</span> quasi.</p>*/}
+        {/*  </div>*/}
 
-          <div className="box">
-            <div className='heading'>
-              <h2>Company Name</h2>
-              <h3>Sep 2019 - Aug 2020</h3>
-              <h4>Front-End Developer</h4>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam
-              minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem
-              expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?
-              Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium
-              blanditiis exercitationem <span>nobis numquam</span> quasi.</p>
-          </div>
+        {/*  <div className="box">*/}
+        {/*    <div className='heading'>*/}
+        {/*      <h2>Company Name</h2>*/}
+        {/*      <h3>Sep 2019 - Aug 2020</h3>*/}
+        {/*      <h4>Front-End Developer</h4>*/}
+        {/*    </div>*/}
+        {/*    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam*/}
+        {/*      minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem*/}
+        {/*      expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?*/}
+        {/*      Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium*/}
+        {/*      blanditiis exercitationem <span>nobis numquam</span> quasi.</p>*/}
+        {/*  </div>*/}
 
-          <div className="box">
-            <div className='heading'>
-              <h2>Company Name</h2>
-              <h3>Sep 2019 - Aug 2020</h3>
-              <h4>Front-End Developer</h4>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam
-              minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem
-              expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?
-              Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium
-              blanditiis exercitationem <span>nobis numquam</span> quasi.</p>
-          </div>
+        {/*  <div className="box">*/}
+        {/*    <div className='heading'>*/}
+        {/*      <h2>Company Name</h2>*/}
+        {/*      <h3>Sep 2019 - Aug 2020</h3>*/}
+        {/*      <h4>Front-End Developer</h4>*/}
+        {/*    </div>*/}
+        {/*    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Alias beatae cumque deserunt dolore eius excepturi hic,</span> laboriosam*/}
+        {/*      minima numquam placeat quam quidem quis repellat ut vel. Aspernatur, assumenda exercitationem*/}
+        {/*      expedita, <span>itaque labore odit omnis optio placeat quam, quas quibusdam ratione reprehenderit</span> tempora?*/}
+        {/*      Accusamus accusantium aperiam doloribus, earum eum maxime nisi officia omnis quae quod! Accusantium*/}
+        {/*      blanditiis exercitationem <span>nobis numquam</span> quasi.</p>*/}
+        {/*  </div>*/}
 
-        </motion.div>
+        {/*</motion.div>*/}
+
+        {/*<div className="listContainerMd">*/}
+        {/*  <Swiper*/}
+        {/*      cssMode={true}*/}
+        {/*      navigation={true}*/}
+        {/*      pagination={true}*/}
+        {/*      mousewheel={true}*/}
+        {/*      keyboard={true}*/}
+        {/*      modules={[Navigation, Pagination, Mousewheel, Keyboard]}*/}
+        {/*      className="mySwiper"*/}
+        {/*  >*/}
+        {/*    <SwiperSlide>Slide 1</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 2</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 3</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 5</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 6</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 7</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 8</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 9</SwiperSlide>*/}
+        {/*  </Swiper>*/}
+        {/*</div>*/}
 
         <div className="listContainerSm">
           <Swiper
               effect={'cards'}
               grabCursor={true}
-              modules={[EffectCards]}
+              modules={[EffectCards, Autoplay]}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               className="mySwiper"
           >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <SwiperSlide>
+              <h1>Company Name</h1>
+              <h4>Jun 2019 - Sep 2020</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deleniti deserunt dolore, enim
+                esse fugit illum in iste laborum maiores nemo neque optio quam similique tempora vitae voluptas
+                voluptatem voluptates. Voluptas voluptatem voluptates voluptates.</p>
+            </SwiperSlide>
+            <SwiperSlide>
+              <h1>Company Name</h1>
+              <h4>Jun 2019 - Sep 2020</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deleniti deserunt dolore, enim
+                esse fugit illum in iste laborum maiores nemo neque optio quam similique tempora vitae voluptas
+                voluptatem voluptates. Voluptas voluptatem voluptates voluptates.</p>
+            </SwiperSlide>
+            <SwiperSlide>
+              <h1>Company Name</h1>
+              <h4>Jun 2019 - Sep 2020</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deleniti deserunt dolore, enim
+                esse fugit illum in iste laborum maiores nemo neque optio quam similique tempora vitae voluptas
+                voluptatem voluptates. Voluptas voluptatem voluptates voluptates.</p>
+            </SwiperSlide>
+            <SwiperSlide>
+              <h1>Company Name</h1>
+              <h4>Jun 2019 - Sep 2020</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deleniti deserunt dolore, enim
+                esse fugit illum in iste laborum maiores nemo neque optio quam similique tempora vitae voluptas
+                voluptatem voluptates. Voluptas voluptatem voluptates voluptates.</p>
+            </SwiperSlide>
           </Swiper>
         </div>
 
