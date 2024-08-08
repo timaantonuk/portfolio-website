@@ -3,6 +3,7 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   @media (max-width: 738px) {
     scroll-snap-type: none;
@@ -18,7 +19,7 @@ html {
 
 body {
   background-color: $background-color;
-  color: $text-primary-color
+  color: $text-primary-color;
 }
 
 a {
@@ -33,7 +34,11 @@ section {
 
 .technologies {
   position: relative;
-  background: radial-gradient(circle, rgba(14,0,68,1) 0%, rgba(12,12,29,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(14, 0, 68, 1) 0%,
+    rgba(12, 12, 29, 1) 100%
+  );
 }
 
 .titleOverlay {
@@ -42,40 +47,46 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: fit-content;
+  text-align: center;
 
   @media (max-width: 1520px) {
-    font-size: 110px;
+    font-size: 100px;
   }
 
   @media (max-width: 738px) {
-    font-size: 51px;
-    padding-left: 60px;
-    width: 100%;
+    font-size: 41px;
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 71px;
+    }
+    left: 50%;
+    top: calc(50% - calc(53px / 2));
+    transform: translateX(-50%);
+
+    min-width: 80vw;
   }
 }
 
-
 @mixin mobile {
   @media (max-width: 738px) {
-    @content
+    @content;
   }
 }
 
 @mixin tablet {
   @media (max-width: 1024px) {
-    @content
+    @content;
   }
 }
 
 @mixin desktop {
   @media (min-width: 1025px) {
-    @content
+    @content;
   }
 }
 
 @mixin mdscreen {
   @media (max-width: 1520px) {
-    @content
+    @content;
   }
 }
-
