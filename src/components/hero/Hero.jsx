@@ -71,8 +71,8 @@ const Hero = () => {
         </motion.div>
 
         <div className="imageContainer">
-          <img src="/hero-tima-4.png" className='heroPerson' alt="Tymofii Antoniuk photo"/>
-          <img src="/hero-tima-overlay.png" className='heroOverlay' alt="Tymofii Antoniuk photo"/>
+          <img src="/hero-tima-4.png" loading='lazy' className='heroPerson' alt="Tymofii Antoniuk photo"/>
+          <img src="/hero-tima-overlay.png" loading='lazy' className='heroOverlay' alt="Tymofii Antoniuk photo"/>
         </div>
 
       </div>

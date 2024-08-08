@@ -35,6 +35,7 @@ const Links = ({setOpen}) => {
 
   const items = [
     'Homepage',
+    'Tech Stack',
     'Experience',
     'Portfolio',
     'Contact',

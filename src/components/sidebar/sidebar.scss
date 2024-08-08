@@ -10,7 +10,7 @@
   color: $text-secondary-color;
 
   .bg {
-    z-index: 999;
+    z-index: 11;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,7 +39,7 @@
   }
 
   button {
-    z-index: 999;
+    z-index: 11;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -49,6 +49,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
 }
