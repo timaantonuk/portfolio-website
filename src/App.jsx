@@ -14,7 +14,7 @@ const App = () => {
       <Hero/>
     </section>
     <section className='technologies' id='Tech Stack'>
-      <h1 className='titleOverlay'>My tech stack</h1>
+      {/* <h1 className='titleOverlay'>My tech stack</h1> */}
       <Technologies/>
     </section>
     <section id='Services'>
