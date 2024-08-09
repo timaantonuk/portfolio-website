@@ -155,6 +155,7 @@ const variants = {
 };
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const ref = useRef();
   const formRef = useRef();
   const [error, setError] = useState(false);
@@ -164,6 +165,8 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    set
 
     emailjs
         .sendForm(

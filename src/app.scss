@@ -1,8 +1,8 @@
 @import 'variables/_colors.scss';
 
 html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  // scroll-snap-type: y mandatory;
+  // scroll-behavior: smooth;
   overflow-x: hidden;
 
   @media (max-width: 738px) {
@@ -29,7 +29,7 @@ a {
 
 section {
   height: 100vh;
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 }
 
 .technologies {
