@@ -1,8 +1,6 @@
 @import 'variables/_colors.scss';
 
 html {
-  // scroll-snap-type: y mandatory;
-  // scroll-behavior: smooth;
   overflow-x: hidden;
 
   @media (max-width: 738px) {
@@ -29,8 +27,16 @@ a {
 
 section {
   height: 100vh;
-  // scroll-snap-align: center;
 }
+
+.workExperience {
+  height: auto;
+  background: $background-gradient;
+}
+
+//.portfolio {
+//  height: 50vh;
+//}
 
 .technologies {
   position: relative;

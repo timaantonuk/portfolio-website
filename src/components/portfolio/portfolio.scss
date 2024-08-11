@@ -16,6 +16,10 @@
     color: $accent-color2;
     font-size: 36px;
 
+    -webkit-animation: glowYellow 1s ease-in-out infinite alternate;
+    -moz-animation: glowYellow 1s ease-in-out infinite alternate;
+    animation: glowYellow 1s ease-in-out infinite alternate;
+
     @include mobile {
       font-size: 24px;
       position: static;
@@ -136,5 +140,14 @@
         }
       }
     }
+  }
+}
+
+@-webkit-keyframes glowYellow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 179, 0, 0.05), 0 0 20px rgba(255, 179, 0, 0.08), 0 0 30px rgba(255, 179, 0, 0.1), 0 0 40px rgba(255, 179, 0, 0.12), 0 0 50px rgba(255, 179, 0, 0.15), 0 0 60px rgba(255, 179, 0, 0.18), 0 0 70px rgba(255, 179, 0, 0.2);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 179, 0, 0.08), 0 0 30px rgba(255, 179, 0, 0.1), 0 0 40px rgba(255, 179, 0, 0.12), 0 0 50px rgba(255, 179, 0, 0.15), 0 0 60px rgba(255, 179, 0, 0.18), 0 0 70px rgba(255, 179, 0, 0.2), 0 0 80px rgba(255, 179, 0, 0.22);
   }
 }

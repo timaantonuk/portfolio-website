@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <ReactLenis options={{
-      lerp: 0.09
+      lerp: 0.14
     }} root>
       <div>
         <section id='Homepage'>
@@ -26,7 +26,7 @@ const App = () => {
         <section id='Services'>
           <Parallax type='services' />
         </section>
-        <section>
+        <section className='workExperience'>
           <Services />
         </section>
         <section id='Portfolio'>

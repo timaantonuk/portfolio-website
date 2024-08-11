@@ -56,7 +56,7 @@ export default function Box({ texture, isMobile = false, ...props }) {
             {...props}
             {...bind()}
             ref={meshRef}
-            scale={active ? scale + 0.3 : scale}
+            scale={active ? scale + 0.09 : scale}
             onClick={() => setActive(!active)}
         >
             <boxGeometry args={[1.3, 1.3, 1.3]} />

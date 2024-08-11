@@ -1,7 +1,7 @@
 import React from 'react';
 import './hero.scss'
 
-import {color, motion} from "framer-motion";
+import {motion} from "framer-motion";
 
 const textVariants = {
   initial: {
@@ -56,7 +56,8 @@ const Hero = () => {
                        transition={{duration: 2, repeat: Infinity, repeatType: "mirror"}}
                        variants={textVariants}>Front-End <br/> &nbsp; &nbsp; &nbsp; &nbsp;
               <motion.span className="rainbow-text"
-                           initial={{ color: '#000000' }}>Developer</motion.span>
+                           initial={{color: '#000000'}}>Developer
+              </motion.span>
             </motion.h1>
             <motion.div variants={textVariants} className="buttons">
               <motion.a href='#Portfolio' variants={textVariants}>See my Latest Works</motion.a>

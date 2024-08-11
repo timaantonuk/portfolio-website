@@ -77,7 +77,7 @@ const Single = ({ item }) => {
   }, []);
 
   return (
-      <section style={{marginBottom: '40px'}}>
+      <section style={{marginBottom: '40px'}} className='myPortfolio'>
         <div className="container">
           <div className="wrapper">
             <div className="imageContainer" ref={ref}>

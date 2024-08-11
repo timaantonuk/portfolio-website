@@ -128,16 +128,27 @@
       }
 
       button {
-        padding: 20px;
-        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-inline: 20px;
+        padding-block: 25px;
+        border-radius: 15px;
         border: none;
         background-color: $accent-color2;
         cursor: pointer;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 22px;
+        transition: all .4s;
         @include mobile {
-          padding: 10px;
+          padding: 20px;
         }
+      }
+
+      button:hover {
+        scale: 1.1;
+        background-color: #ffbb4f;
       }
     }
   }

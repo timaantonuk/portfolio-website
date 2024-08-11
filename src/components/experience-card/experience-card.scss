@@ -1,0 +1,34 @@
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.description {
+  margin-top: 10px;
+  list-style: disc;
+  margin-left: 10px;
+
+  .descriptionItem {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+}
+
+.vertical-timeline-element {
+  margin: 5em 0 !important;
+}
