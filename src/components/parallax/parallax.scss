@@ -16,9 +16,9 @@
   h1 {
     font-size: 68px;
 
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+    //-webkit-animation: glow 1s ease-in-out infinite alternate;
+    //-moz-animation: glow 1s ease-in-out infinite alternate;
+    //animation: glow 1s ease-in-out infinite alternate;
 
     @include mobile {
       font-size: 50px;
@@ -68,11 +68,11 @@
 
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.05), 0 0 20px rgba(200, 200, 200, 0.08), 0 0 30px rgba(180, 180, 180, 0.1), 0 0 40px rgba(160, 160, 160, 0.12), 0 0 50px rgba(140, 140, 140, 0.15), 0 0 60px rgba(120, 120, 120, 0.18), 0 0 70px rgba(100, 100, 100, 0.2);
-  }
-  to {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.08), 0 0 30px rgba(230, 230, 230, 0.1), 0 0 40px rgba(210, 210, 210, 0.12), 0 0 50px rgba(190, 190, 190, 0.15), 0 0 60px rgba(170, 170, 170, 0.18), 0 0 70px rgba(150, 150, 150, 0.2), 0 0 80px rgba(130, 130, 130, 0.22);
-  }
-}
+//@-webkit-keyframes glow {
+//  from {
+//    text-shadow: 0 0 10px rgba(255, 255, 255, 0.05), 0 0 20px rgba(200, 200, 200, 0.08), 0 0 30px rgba(180, 180, 180, 0.1), 0 0 40px rgba(160, 160, 160, 0.12), 0 0 50px rgba(140, 140, 140, 0.15), 0 0 60px rgba(120, 120, 120, 0.18), 0 0 70px rgba(100, 100, 100, 0.2);
+//  }
+//  to {
+//    text-shadow: 0 0 20px rgba(255, 255, 255, 0.08), 0 0 30px rgba(230, 230, 230, 0.1), 0 0 40px rgba(210, 210, 210, 0.12), 0 0 50px rgba(190, 190, 190, 0.15), 0 0 60px rgba(170, 170, 170, 0.18), 0 0 70px rgba(150, 150, 150, 0.2), 0 0 80px rgba(130, 130, 130, 0.22);
+//  }
+//}

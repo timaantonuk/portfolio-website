@@ -11,33 +11,33 @@ import { ReactLenis, useLenis } from 'lenis/react'
 const App = () => {
 
   return (
-    <ReactLenis options={{
-      lerp: 0.14
-    }} root>
-      <div>
-        <section id='Homepage'>
-          <Navbar />
-          <Hero />
-        </section>
-        <section className='technologies' id='Tech Stack'>
-          {/* <h1 className='titleOverlay'>My tech stack</h1> */}
-          <Technologies />
-        </section>
-        <section id='Services'>
-          <Parallax type='services' />
-        </section>
-        <section className='workExperience'>
-          <Services />
-        </section>
-        <section id='Portfolio'>
-          <Parallax type='portfolio' />
-        </section>
-        <Portfolio />
-        <section id='Contact'>
-          <Contact />
-        </section>
-      </div>
-    </ReactLenis>
+      <ReactLenis options={{
+        lerp: 0.14
+      }} root>
+        <div>
+          <section id='Homepage'>
+            <Navbar />
+            <Hero />
+          </section>
+          <section className='technologies' id='Tech Stack'>
+            <Technologies />
+          </section>
+          <section id='Services'>
+            <Parallax type='services' />
+          </section>
+          <section className='workExperience'>
+            <Services />
+          </section>
+          <section id='Portfolio'>
+            <Parallax type='portfolio' />
+          </section>
+          <Portfolio />
+          <section id='Contact'>
+            <Contact />
+          </section>
+        </div>
+      </ReactLenis>
+
   )
 };
 
