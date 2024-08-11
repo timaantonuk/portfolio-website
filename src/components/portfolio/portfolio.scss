@@ -7,8 +7,11 @@
   background-repeat: repeat;
   background-size: 600px;
 
+
+
   .progress {
     position: sticky;
+    z-index: 10;
     top: 0;
     left: 0;
     padding-block: 50px;
@@ -20,9 +23,24 @@
     -moz-animation: glowYellow 1s ease-in-out infinite alternate;
     animation: glowYellow 1s ease-in-out infinite alternate;
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, #0c0c1d 70%, rgba(12, 12, 29, 0) 100%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+
     @include mobile {
       font-size: 24px;
       position: static;
+
+
     }
 
     .progressBar {
@@ -46,6 +64,7 @@
     overflow: hidden;
 
 
+
     .wrapper {
       max-width: 1366px;
       height: 100%;
@@ -54,6 +73,7 @@
       align-items: center;
       justify-content: center;
       gap: 50px;
+
 
       @include mobile {
         flex-direction: column;
@@ -142,6 +162,7 @@
     }
   }
 }
+
 
 @-webkit-keyframes glowYellow {
   from {
