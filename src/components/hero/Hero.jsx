@@ -67,7 +67,7 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <motion.div className="slidingTextContainer" variants={sliderVariants} initial='initial' animate='animate'>
+        <motion.div className="slidingTextContainerBottom" variants={sliderVariants} initial='initial' animate='animate'>
           Software Engineer Front-End Web Developer
         </motion.div>
 

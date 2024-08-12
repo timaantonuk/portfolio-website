@@ -94,10 +94,12 @@
           height: 100%;
           border-radius: 50px;
           object-fit: cover;
+          box-shadow: -14px 18px 49px 38px rgba(65,196,196,0.14);
 
           @include mobile {
 
             border-radius: 50px;
+            box-shadow: -30px 80px 70px 38px rgba(65,196,196,0.14);
           }
         }
       }
