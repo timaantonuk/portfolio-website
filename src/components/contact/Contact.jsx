@@ -25,6 +25,8 @@ const variants = {
 };
 
 const Contact = () => {
+  // todo add logic preventing from spamming
+  // save ip in local storage or whatever
   const [isSubmitting, setIsSubmitting] = useState(false);
   const ref = useRef();
   const formRef = useRef();
@@ -36,7 +38,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    set
+    setIsSubmitting(true);
 
     emailjs
         .sendForm(
@@ -53,7 +55,9 @@ const Contact = () => {
             (error) => {
               setError(true);
             }
-        );
+        ).finally(() => {
+          setIsSubmitting(false);
+        });
   };
 
   return (
@@ -130,7 +134,7 @@ const Contact = () => {
             <input type="text" required placeholder="Name" name="name" />
             <input type="email" required placeholder="Email" name="email" />
             <textarea rows={8} placeholder="Message" name="message" />
-            <button>
+            <button disabled={isSubmitting}>
               <span>Send Your Message </span>
               <IoIosSend style={{width: '30px', height: '30px'}}/>
             </button>
