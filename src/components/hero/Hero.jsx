@@ -60,7 +60,7 @@ const Hero = () => {
               </motion.span>
             </motion.h1>
             <motion.div variants={textVariants} className="buttons">
-              <motion.a onClick={(e)=>{
+              <motion.a href='#Portfolio' onClick={(e)=>{
                 e.preventDefault()
                 document.getElementById('Portfolio').scrollIntoView({behavior: 'smooth'})
               }} variants={textVariants}>See my Latest Works</motion.a>
