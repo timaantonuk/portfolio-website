@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import {motion} from "framer-motion";
+import ScrollContext from '../../ScrollContext/ScrollContext';
 
 const variants = {
   open: {
@@ -33,6 +34,9 @@ const itemVariants = {
 
 const Links = ({setOpen}) => {
 
+  const context = useContext(ScrollContext)
+
+
   const items = [
     'Homepage',
     'Tech Stack',
@@ -41,16 +45,28 @@ const Links = ({setOpen}) => {
     'Contact',
   ]
 
+  const onClick = (e, item)=>{
+    if(item === 'Contact')
+     return setOpen((prev) => !prev) 
+    e.preventDefault()
+    document.getElementById(item === 'Experience' ? 'Services' : item).scrollIntoView({behavior: 'smooth'})
+    setOpen((prev) => !prev)
+    context.changeScrollingActive(true)
+    setTimeout(()=>context.changeScrollingActive(false), 1000)
+  }
+
   return (
       <motion.div className='links' variants={variants}>
         {items.map(item => (
             <motion.a
                 href={item === 'Experience' ? '#Services' : `#${item}`}
                 key={item}
+                onClick={(e)=>onClick(e, item)}
+                // style={{cursor: 'pointer'}}
                 variants={itemVariants}
                 whileHover={{scale: 1.1}}
                 whileTap={{scale:0.9}}
-                onClick={() => setOpen((prev) => !prev)}
+                // onClick={() => setOpen((prev) => !prev)}
             >
               {item}
             </motion.a>

@@ -1,7 +1,8 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useContext } from "react";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { FaGithubSquare } from "react-icons/fa";
+import ScrollContext from "../ScrollContext/ScrollContext";
 
 const items = [
   {
@@ -55,26 +56,14 @@ const items = [
   },
 ];
 
-const Single = ({ item }) => {
+const Single = ({ item, isScreenWide }) => {
   const ref = useRef();
-  const [isScreenWide, setIsScreenWide] = useState(window.innerWidth >= 750);
 
   const { scrollYProgress } = useScroll({
     target: ref,
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsScreenWide(window.innerWidth >= 750);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
       <section style={{marginBottom: '40px'}} className='myPortfolio'>
@@ -103,17 +92,31 @@ const Single = ({ item }) => {
 };
 
 const Portfolio = () => {
-  const ref = useRef();
+  const context = useContext(ScrollContext)
 
+  const [isScreenWide, setIsScreenWide] = useState(window.innerWidth >= 750);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsScreenWide(window.innerWidth >= 750);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  if(context.scrollingActive) return null
 
   return (
-      <div className="portfolio" ref={ref}>
+      <div className="portfolio">
         <div className="progress">
           <h1>Featured Works</h1>
 
         </div>
         {items.map((item) => (
-            <Single item={item} key={item.id}/>
+            <Single isScreenWide={isScreenWide} item={item} key={item.id}/>
         ))}
       </div>
   );

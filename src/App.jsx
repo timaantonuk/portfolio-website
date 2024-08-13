@@ -6,15 +6,19 @@ import Services from "./components/services/Services.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Technologies from "./components/technologies/Technologies.jsx";
-import { ReactLenis, useLenis } from 'lenis/react'
+import { ReactLenis } from 'lenis/react'
+import ScrollContext from './components/ScrollContext/ScrollContext.jsx';
+import { useState } from 'react';
 
 const App = () => {
 
+  const [scrollingActive, changeScrollingActive] = useState(false)
   return (
-      <ReactLenis options={{
-        lerp: 0.14
-      }} root>
-        <div>
+    <ReactLenis options={{
+      lerp: 0.14,
+    }} root>
+      <div>
+        <ScrollContext.Provider value={{scrollingActive, changeScrollingActive}}>
           <section id='Homepage'>
             <Navbar />
             <Hero />
@@ -35,8 +39,9 @@ const App = () => {
           <section id='Contact'>
             <Contact />
           </section>
-        </div>
-      </ReactLenis>
+        </ScrollContext.Provider>
+      </div>
+    </ReactLenis>
 
   )
 };
