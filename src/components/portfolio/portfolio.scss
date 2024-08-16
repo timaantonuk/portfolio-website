@@ -19,10 +19,6 @@
     color: $accent-color2;
     font-size: 36px;
 
-    //-webkit-animation: glowYellow 1s ease-in-out infinite alternate;
-    //-moz-animation: glowYellow 1s ease-in-out infinite alternate;
-    //animation: glowYellow 1s ease-in-out infinite alternate;
-
     &::after {
       content: "";
       position: absolute;

@@ -62,11 +62,9 @@ const Links = ({setOpen}) => {
                 href={item === 'Experience' ? '#Services' : `#${item}`}
                 key={item}
                 onClick={(e)=>onClick(e, item)}
-                // style={{cursor: 'pointer'}}
                 variants={itemVariants}
                 whileHover={{scale: 1.1}}
                 whileTap={{scale:0.9}}
-                // onClick={() => setOpen((prev) => !prev)}
             >
               {item}
             </motion.a>

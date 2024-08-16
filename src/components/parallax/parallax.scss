@@ -16,10 +16,6 @@
   h1 {
     font-size: 68px;
 
-    //-webkit-animation: glow 1s ease-in-out infinite alternate;
-    //-moz-animation: glow 1s ease-in-out infinite alternate;
-    //animation: glow 1s ease-in-out infinite alternate;
-
     @include mobile {
       font-size: 50px;
       text-align: center;
