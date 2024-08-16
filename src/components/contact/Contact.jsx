@@ -25,8 +25,7 @@ const variants = {
 };
 
 const Contact = () => {
-  // todo add logic preventing from spamming
-  // save ip in local storage or whatever
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const ref = useRef();
   const formRef = useRef();
@@ -72,24 +71,24 @@ const Contact = () => {
           <motion.h1 variants={variants}>Let’s work together</motion.h1>
           <div className='items'>
             <motion.div className="item" variants={variants}>
-              <IoMdMailUnread style={{height: '50px', width: '50px'}}/>
+              <a href='mailto:tima.antonuk2@gmail.com' className='contactIcon'><IoMdMailUnread style={{height: '50px', width: '50px'}}/></a>
               <div>
                 <h2>Mail</h2>
-                <span>tima.antonuk2@gmail.com</span>
+                <span><a href='mailto:tima.antonuk2@gmail.com'>tima.antonuk2@gmail.com</a></span>
               </div>
             </motion.div>
             <motion.div className="item" variants={variants}>
-              <FaHouseLaptop style={{height: '50px', width: '50px'}}/>
+              <FaHouseLaptop className='contactIcon' style={{height: '50px', width: '50px'}}/>
               <div>
                 <h2>Address</h2>
-                <span>123 Avenue, New York, USA</span>
+                <span><address className='address'>123 Avenue, New York, USA</address></span>
               </div>
             </motion.div>
             <motion.div className="item" variants={variants}>
-              <FaPhoneSquareAlt style={{height: '50px', width: '50px'}}/>
+              <a href='tel:+1234567890' className='contactIcon'><FaPhoneSquareAlt style={{height: '50px', width: '50px'}}/></a>
               <div>
                 <h2>Phone</h2>
-                <span>+1 234 567 890</span>
+                <span><a href='tel:+1234567890'>+1 234 567 890</a></span>
               </div>
             </motion.div>
           </div>

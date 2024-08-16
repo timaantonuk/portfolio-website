@@ -8,11 +8,23 @@ import Contact from "./components/contact/Contact.jsx";
 import Technologies from "./components/technologies/Technologies.jsx";
 import { ReactLenis } from 'lenis/react'
 import ScrollContext from './components/ScrollContext/ScrollContext.jsx';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import TechnologiesMobile from "./components/technologies/Technologies-mobile.jsx";
 
 const App = () => {
 
   const [scrollingActive, changeScrollingActive] = useState(false)
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 750);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <ReactLenis options={{
       lerp: 0.14,
@@ -23,9 +35,9 @@ const App = () => {
             <Navbar />
             <Hero />
           </section>
-          {/*<section className='technologies' id='Tech Stack'>*/}
-          {/*  <Technologies />*/}
-          {/*</section>*/}
+          <section className='technologies' id='Tech Stack'>
+            {isMobile ? <TechnologiesMobile/> : <Technologies/>}
+          </section>
           <section id='Services'>
             <Parallax type='services' />
           </section>
@@ -35,8 +47,8 @@ const App = () => {
           <section id='Portfolio'>
             <Parallax type='portfolio' />
           </section>
-          <Portfolio />
-          <section id='Contact'>
+            <Portfolio />
+          <section style={{marginBottom: '80px'}} id='Contact'>
             <Contact />
           </section>
         </ScrollContext.Provider>

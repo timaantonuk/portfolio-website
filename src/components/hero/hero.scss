@@ -21,7 +21,7 @@
       gap: 40px;
 
       @include mobile {
-        height: 50%;
+        height: 60%;
         width: 100%;
         gap: 20px;
         align-items: center;
@@ -34,7 +34,7 @@
         letter-spacing: 10px;
 
         @include mobile {
-          font-size: 18px;
+          font-size: 15px;
         }
       }
 

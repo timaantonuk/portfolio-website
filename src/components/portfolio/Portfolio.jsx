@@ -69,9 +69,11 @@ const Single = ({ item, isScreenWide }) => {
       <section style={{marginBottom: '40px'}} className='myPortfolio'>
         <div className="container">
           <div className="wrapper">
+
             <div className="imageContainer" ref={ref}>
               <img src={item.img} alt="" />
             </div>
+
             <motion.div className="textContainer" style={isScreenWide ? { y } : {}}>
               <h2>{item.title}</h2>
               <p>{item.desc}</p>
