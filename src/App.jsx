@@ -23,9 +23,9 @@ const App = () => {
             <Navbar />
             <Hero />
           </section>
-          <section className='technologies' id='Tech Stack'>
-            <Technologies />
-          </section>
+          {/*<section className='technologies' id='Tech Stack'>*/}
+          {/*  <Technologies />*/}
+          {/*</section>*/}
           <section id='Services'>
             <Parallax type='services' />
           </section>
