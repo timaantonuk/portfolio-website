@@ -1,9 +1,9 @@
 @import 'variables/_colors.scss';
 
 html {
-  overflow-x: hidden;
 
   @media (max-width: 738px) {
+    overflow-x: hidden;
     scroll-snap-type: none;
   }
 }
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  //overflow: hidden;
   background-color: $background-color;
   color: $text-primary-color;
 }
