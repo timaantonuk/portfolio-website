@@ -9,6 +9,7 @@
   color: $text-transparent;
   width: 50%;
   font-weight: bold;
+  pointer-events: none;
 
   @include mobile {
     font-size: 300px;
