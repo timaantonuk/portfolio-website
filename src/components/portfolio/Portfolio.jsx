@@ -7,17 +7,17 @@ import ScrollContext from "../ScrollContext/ScrollContext";
 const items = [
   {
     id: 1,
-    title: "TODO LIST JS",
-    img: "/todo-list.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    link: 'https://github.com/timaantonuk/todoapp-js'
+    title: "Saladly",
+    img: "/saladly.jpg",
+    desc: "I developed a comprehensive online salad delivery store, covering everything from design to full functionality. The platform supports user account creation and authentication via Firebase, with advanced features such as filtering, search, sorting, pagination, and a user-friendly CMS powered by Sanity for content management. I implemented Skeleton loading for smooth data retrieval, integrated Mapbox for location services, and ensured mobile responsiveness. Additionally, I integrated Stripe for payment processing and used React Hook Forms for efficient form handling.",
+    link: 'https://github.com/timaantonuk/saladly'
   },
   {
     id: 2,
-    title: "Positivus Landing",
-    img: "/positivus.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    link: 'https://github.com/timaantonuk/positivus'
+    title: "Project Management App",
+    img: "/prmapp.jpg",
+    desc: "This program can simplify the organization of your projects. You can add, edit, and delete projects, as well as store them in localStorage.",
+    link: 'https://github.com/timaantonuk/project-management-app'
   },
   {
     id: 3,
@@ -35,17 +35,17 @@ const items = [
   },
   {
     id: 5,
-    title: "Notes App",
-    img: "/notes-app.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    link: 'https://github.com/timaantonuk/notes-app'
+    title: "TODO LIST JS",
+    img: "/todo-list.jpg",
+    desc: "The Todo App allows you to create, filter, find, and delete tasks directly in your browser. The app is fully adaptive for mobile devices and tablets and is also cross-browser compatible. The tasks are saved to localStorage, so they persist even after you refresh or close the page.",
+    link: 'https://github.com/timaantonuk/todoapp-js',
   },
   {
     id: 6,
-    title: "Orys Plumbing",
-    img: "/orys.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    link: 'https://github.com/coyjiv/orys-plumbing-solutions'
+    title: "Positivus Landing",
+    img: "/positivus.jpg",
+    desc: "Welcome to the landing page for Positivus SMM Studio! This landing page has been crafted using HTML5 with the latest tags, SASS with SCSS dialect, and follows the BEM structure for naming and reusability. The website is fully adaptive, ensuring seamless viewing across tablets and mobile devices.",
+    link: 'https://github.com/timaantonuk/positivus'
   },
   {
     id: 7,
