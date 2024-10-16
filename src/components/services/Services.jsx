@@ -14,7 +14,7 @@ const experiences = [
   {
     title: "Front-End Developer",
     company_name: "Parimatch",
-    icon: 'https://assets.gamingintelligence.com/wp-content/uploads/sites/4/2021/02/03130952/parimatch.jpg',
+    icon: 'https://slotgods.co.uk/storage/app/media/slot-sites/parimatch-casino-logo.webp',
     iconBg: "#E6DEDD",
     date: "June 2021 - February 2022",
     points: [
@@ -24,7 +24,7 @@ const experiences = [
   {
     title: "Front-End Developer",
     company_name: "Harvey Nash",
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPKBSMtnx_ZHMfadD_vCuBBXvsaqYu1XgjDg&s',
+    icon: 'https://slotgods.co.uk/storage/app/media/slot-sites/parimatch-casino-logo.webp',
     iconBg: "#383E56",
     date: "May 2023 - September 2024",
     points: [
