@@ -81,14 +81,14 @@ const Contact = () => {
               <FaHouseLaptop className='contactIcon' style={{height: '50px', width: '50px'}}/>
               <div>
                 <h2>Address</h2>
-                <span><address className='address'>123 Avenue, New York, USA</address></span>
+                <span><address className='address'>Ireland</address></span>
               </div>
             </motion.div>
             <motion.div className="item" variants={variants}>
               <a href='tel:+1234567890' className='contactIcon'><FaPhoneSquareAlt style={{height: '50px', width: '50px'}}/></a>
               <div>
                 <h2>Phone</h2>
-                <span><a href='tel:+1234567890'>+1 234 567 890</a></span>
+                <span><a href='tel:+1234567890'>+353 85 286 7141</a></span>
               </div>
             </motion.div>
           </div>
