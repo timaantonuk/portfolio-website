@@ -81,7 +81,7 @@ const Contact = () => {
               <FaHouseLaptop className='contactIcon' style={{height: '50px', width: '50px'}}/>
               <div>
                 <h2>Address</h2>
-                <span><address className='address'>Ireland</address></span>
+                <span><address className='address'>Galway, Ireland</address></span>
               </div>
             </motion.div>
             <motion.div className="item" variants={variants}>

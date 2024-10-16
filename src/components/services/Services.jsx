@@ -2,8 +2,8 @@ import './services.scss'
 
 const experiences = [
   {
-    title: "Front-End Developer",
-    company_name: "Harvey Nash",
+    title: "Graphic Designer",
+    company_name: "Parimatch",
     icon: 'https://assets.gamingintelligence.com/wp-content/uploads/sites/4/2021/02/03130952/parimatch.jpg',
     iconBg: "#383E56",
     date: "December 2020 - June 2021",

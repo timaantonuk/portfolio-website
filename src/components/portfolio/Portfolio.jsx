@@ -9,7 +9,7 @@ const items = [
     id: 1,
     title: "Saladly",
     img: "/saladly.jpg",
-    desc: "I developed a comprehensive online salad delivery store, covering everything from design to full functionality. The platform supports user account creation and authentication via Firebase, with advanced features such as filtering, search, sorting, pagination, and a user-friendly CMS powered by Sanity for content management. I implemented Skeleton loading for smooth data retrieval, integrated Mapbox for location services, and ensured mobile responsiveness. Additionally, I integrated Stripe for payment processing and used React Hook Forms for efficient form handling.",
+    desc: "A comprehensive, fully adaptive and cross-browser online salad delivery store with authorization, payment handling, admin panel and so on...",
     link: 'https://github.com/timaantonuk/saladly'
   },
   {
