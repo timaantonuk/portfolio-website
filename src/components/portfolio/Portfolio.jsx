@@ -30,7 +30,7 @@ const items = [
     id: 4,
     title: "Remsvol Texas",
     img: "/remsvol.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "I designed and developed a cross-browser, responsive business card website for a construction company in Texas. The site features the ability for users to select desired services and submit inquiries through a form powered by Email JS. Additionally, I implemented form validation using Formik and Yup to enhance user experience and ensure data integrity.",
     link: 'https://github.com/timaantonuk/remsvol-texas'
   },
   {
@@ -51,7 +51,7 @@ const items = [
     id: 7,
     title: "Weather App",
     img: "/weather-app.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Monitor weather everywhere.",
     link: 'https://github.com/timaantonuk/weather-app'
   },
 ];
